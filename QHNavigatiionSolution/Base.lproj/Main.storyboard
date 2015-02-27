@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGd-J8-R9K">
+                                <rect key="frame" x="16" y="97" width="390" height="30"/>
+                                <color key="backgroundColor" red="0.35686275360000003" green="0.90980398650000005" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="originalNaviC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="97" width="239" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="originalNavCAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kCE-2z-nBF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyp-ag-2bf">
+                                <rect key="frame" x="16" y="97" width="390" height="30"/>
+                                <color key="backgroundColor" red="0.83529418706893921" green="0.73333334922790527" blue="0.92941182851791382" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="customNaviBar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="145" width="239" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="customNaviBarAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cwy-26-egG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlu-0O-K97">
+                                <rect key="frame" x="16" y="97" width="390" height="30"/>
+                                <color key="backgroundColor" red="0.92156869173049927" green="0.86274516582489014" blue="0.66274511814117432" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="customNaviC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="191" width="239" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="customNaviCAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="501-Xn-4Va"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvc-Vy-GPw">
+                                <rect key="frame" x="16" y="97" width="390" height="30"/>
+                                <color key="backgroundColor" red="0.92941182851791382" green="0.69803923368453979" blue="0.78431379795074463" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="qhMainGestureRecognizerVC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="235" width="239" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="qhMainGestureRecognizerVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c4z-ME-FDG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pyp-ag-2bf"/>
+                                <exclude reference="wlu-0O-K97"/>
+                                <exclude reference="bvc-Vy-GPw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pyp-ag-2bf"/>
+                                <include reference="wlu-0O-K97"/>
+                                <include reference="bvc-Vy-GPw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429"/>
+        </scene>
+    </scenes>
+</document>
